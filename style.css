@@ -3,7 +3,7 @@ body {
     background-image: url("asserts/2.jpg");
     height: 100vh;
     background-attachment: fixed;
-    overflow-x: hidden;
+/*     overflow-x: hidden; */
 }
 
 .content1 {
