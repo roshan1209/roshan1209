@@ -1,0 +1,10 @@
+{
+  "ordersApi": {
+    "schema": {
+      "method": "POST",
+      "host": "{{url}}",
+      "headers": "{{headers}}",
+      "body": "{{body}}"
+    }
+  }
+}
