@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #1f2937; }
+.container { padding: 12px; }
+.header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.header .icon { width: 20px; height: 20px; }
+.section-title { font-size: 12px; text-transform: uppercase; color: #6b7280; margin: 12px 0 6px; }
+.card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.card .row { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.badge { background: #eef2ff; color: #3730a3; font-size: 11px; padding: 2px 6px; border-radius: 999px; }
+.muted { color: #6b7280; font-size: 12px; }
+.error { color: #b91c1c; background: #fee2e2; border: 1px solid #fecaca; padding: 8px; border-radius: 6px; }
+.skeleton { background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 37%, #f3f4f6 63%); border-radius: 6px; background-size: 400% 100%; animation: shimmer 1.4s ease infinite; height: 60px; margin-bottom: 8px; }
+@keyframes shimmer { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; }}
+.list { display: grid; gap: 8px; }
+.actions { margin-top: 8px; display: flex; gap: 8px; }
+.button { background: #0B5FFF; color: white; font-size: 12px; padding: 6px 10px; border: none; border-radius: 6px; cursor: pointer; }
+.button.secondary { background: #e5e7eb; color: #111827; }
+.link { color: #0B5FFF; text-decoration: none; font-size: 12px; }

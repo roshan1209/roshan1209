@@ -1,0 +1,29 @@
+{
+  "inline": [
+    {
+      "name": "api_base_url",
+      "type": "url",
+      "label": "Mock Orders API Base URL",
+      "default": "",
+      "description": "Base URL of your mock or real orders API, e.g., https://api.example.com"
+    },
+    {
+      "name": "api_token",
+      "type": "password",
+      "label": "API Token (optional)",
+      "description": "If your API requires authentication, provide the token here"
+    },
+    {
+      "name": "orders_limit",
+      "type": "number",
+      "label": "Orders limit",
+      "default": 5
+    },
+    {
+      "name": "enable_portal_app",
+      "type": "boolean",
+      "label": "Enable Support Portal Widget",
+      "default": true
+    }
+  ]
+}
