@@ -1,0 +1,29 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "app/index.html",
+          "icon": "assets/icon.svg"
+        },
+        "support_portal": {
+          "url": "portal/index.html",
+          "icon": "assets/icon.svg"
+        }
+      },
+      "whitelisted-domains": [
+        "https://*",
+        "http://*"
+      ],
+      "events": {
+        "onAppInstall": { "handler": "onInstall" },
+        "onAppUninstall": { "handler": "onUninstall" }
+      }
+    }
+  },
+  "engines": {
+    "node": "18.0.0"
+  },
+  "dependencies": {}
+}
