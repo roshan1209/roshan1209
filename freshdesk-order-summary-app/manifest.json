@@ -21,7 +21,7 @@
         "https://*.shopeasy.example"
       ],
       "engines": {
-        "node": "18.19.0"
+        "node": "18.20.8"
       },
       "request": {
         "timeout": 8000
@@ -32,7 +32,7 @@
   "description": "Shows a customer's recent orders to agents and customers in Freshdesk.",
   "version": "1.0.0",
   "engines": {
-    "node": "18.19.0"
+    "node": "18.20.8"
   },
   "dependencies": {},
   "whitelisted-domains": [
