@@ -1,0 +1,63 @@
+{
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "app/agent/index.html",
+          "icon": "assets/icon.svg"
+        },
+        "portal_ticket_new": {
+          "url": "app/portal/index.html",
+          "icon": "assets/icon.svg"
+        },
+        "portal_ticket_view": {
+          "url": "app/portal/index.html",
+          "icon": "assets/icon.svg"
+        }
+      },
+      "whitelisted-domains": [
+        "https://api.mockorders.local",
+        "https://*.shopeasy.example"
+      ],
+      "engines": {
+        "node": "18.19.0"
+      },
+      "request": {
+        "timeout": 8000
+      }
+    }
+  },
+  "name": "ShopEasy Order Summary",
+  "description": "Shows a customer's recent orders to agents and customers in Freshdesk.",
+  "version": "1.0.0",
+  "engines": {
+    "node": "18.19.0"
+  },
+  "dependencies": {},
+  "whitelisted-domains": [
+    "https://api.mockorders.local",
+    "https://*.shopeasy.example"
+  ],
+  "server": {
+    "events": {
+      "onAppInstall": {
+        "handler": "server/server.js"
+      },
+      "onAppUninstall": {
+        "handler": "server/server.js"
+      }
+    },
+    "methods": {
+      "fetchRecentOrders": {
+        "handler": "server/server.js"
+      }
+    }
+  },
+  "iparams": {
+    "login_required": true,
+    "hide_post_install": false,
+    "template": "config/iparams.html",
+    "json": "config/iparams.json"
+  }
+}

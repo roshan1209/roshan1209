@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "name": "orders_api_base_url",
+      "label": "Orders API Base URL",
+      "description": "Base URL for ShopEasy orders API (use mock for now)",
+      "type": "text",
+      "required": true,
+      "default_value": "https://api.mockorders.local"
+    },
+    {
+      "name": "orders_api_token",
+      "label": "Orders API Token",
+      "type": "text",
+      "secure": true,
+      "required": false
+    },
+    {
+      "name": "orders_to_show",
+      "label": "Number of recent orders to display",
+      "type": "number",
+      "required": true,
+      "default_value": 5,
+      "min": 1,
+      "max": 20
+    }
+  ]
+}
